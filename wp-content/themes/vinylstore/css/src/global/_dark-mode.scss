@@ -1,0 +1,29 @@
+body.darkMode {
+    background:#000;
+
+    header {
+        background:#000;
+        border-bottom:1px solid #fff;
+    }
+
+    footer {
+        background:#000;
+    }
+
+    h1,h2,h3,h4,h5,p,ul,ol,span,a,div {
+        color:#fff;
+    }
+
+    .swiper-pagination-bullet {
+        background:#fff;
+    }
+
+    .gform_wrapper.gravity-theme .gfield_label {
+        color:#fff;
+    }
+
+    .gform_wrapper.gravity-theme #field_submit input, .gform_wrapper.gravity-theme .gform_footer input {
+        color:#fff;
+        border-color:#fff !important;
+    }
+}

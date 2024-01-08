@@ -1,0 +1,90 @@
+.sidebar-container {
+    float: left;
+    width: 100%;
+
+    @media only screen and (max-width: 767px) {
+        padding-bottom: 30px;
+        border-bottom: 6px solid $color-yellow;
+    }
+
+    .image-container {
+        float: left;
+        width: 100%;
+        padding-top: 70%;
+        position: relative;
+        margin-bottom: 20px;
+
+        &:after {
+            content:'';
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 0 30px 70px;
+            border-color: transparent transparent #ffffff transparent;
+            z-index: 1;
+        }
+    }
+
+    .sidebar-text-container {
+        float: left;
+        width: 100%;
+
+        h4 {
+            float: left;
+            width: 100%;
+            margin-bottom: 50px;
+            text-transform: uppercase;
+            color: #000;
+
+            @media only screen and (max-width: 1023px) {
+                margin-bottom: 30px;
+            }
+
+            @media only screen and (max-width: 767px) {
+                font-size: 28px;
+            }
+        }
+
+        .sidebar-links {
+            float: left;
+            width: 100%;
+
+            .sidebar-link {
+                float: left;
+                width: 100%;
+                margin-bottom: 35px;
+                text-align: left;
+
+                @media only screen and (max-width: 1023px) {
+                    margin-bottom: 25px;
+                }
+            }
+
+            a {
+                float: left;
+                width: auto;
+                font-family: $font-bold;
+                text-transform: uppercase;
+                margin-bottom: 0px;
+                font-size: 28px;
+                line-height: 36px;
+                letter-spacing: 0.01em;
+                color: $color-text-secondary;
+                @include transition();
+
+                @media only screen and (max-width: 1023px) {
+                    font-size: 21px;
+                    line-height: 26px;
+                }
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

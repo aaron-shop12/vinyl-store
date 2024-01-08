@@ -1,0 +1,12 @@
+2024-01-08T00:53:26+00:00 CRITICAL Uncaught Error: Call to undefined function create_function() in /srv/users/serverpilot/apps/vinyl-store-2024/public/wp-content/plugins/wpallimport/classes/config.php:44
+Stack trace:
+#0 /srv/users/serverpilot/apps/vinyl-store-2024/public/wp-content/plugins/wpallimport/classes/config.php(27): PMXI_Config->loadFromFile('/srv/users/serv...', NULL)
+#1 /srv/users/serverpilot/apps/vinyl-store-2024/public/wp-content/plugins/wpallimport/plugin.php(214): PMXI_Config::createFromFile('/srv/users/serv...')
+#2 /srv/users/serverpilot/apps/vinyl-store-2024/public/wp-content/plugins/wpallimport/plugin.php(113): PMXI_Plugin->__construct()
+#3 /srv/users/serverpilot/apps/vinyl-store-2024/public/wp-content/plugins/wpallimport/plugin.php(638): PMXI_Plugin::getInstance()
+#4 /srv/users/serverpilot/apps/vinyl-store-2024/public/wp-admin/includes/plugin.php(2318): include_once('/srv/users/serv...')
+#5 /srv/users/serverpilot/apps/vinyl-store-2024/public/wp-admin/includes/plugin.php(663): plugin_sandbox_scrape('wpallimport/plu...')
+#6 /srv/users/serverpilot/apps/vinyl-store-2024/public/wp-admin/plugins.php(58): activate_plugin('wpallimport/plu...', 'https://vinyl-s...', false)
+#7 {main}
+  thrown in /srv/users/serverpilot/apps/vinyl-store-2024/public/wp-content/plugins/wpallimport/classes/config.php on line 44
+

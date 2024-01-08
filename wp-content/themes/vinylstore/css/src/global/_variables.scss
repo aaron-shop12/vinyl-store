@@ -1,0 +1,112 @@
+// RESPONSIVE
+$break-small: 360px;
+$break-480: 480px;
+$break-640: 640px;
+$break-767: 767px;
+$break-mobile: 768px;
+$break-1023: 1023px;
+$break-tablet: 1024px;
+$break-desktop: 1500px;
+$break-large: 1900px; // RESPONSIVE BASE
+$base-desktop: 1300; // SITE
+$site-min-width: 260px;
+$site-max-width: 1440px;
+$site-padding-large: 70px;
+$site-padding-desktop: 70px;
+$site-padding-tablet: 40px;
+$site-padding-mobile: 20px;
+
+// Colours
+
+$color-black: #000;
+$color-white: #fff;
+
+// Brand Colours
+
+$color-blue:#1266A6;
+$color-purple:#672974;
+$color-green:#23A847;
+$color-orange:#F05A1F;
+$color-yellow: #FFFF00;
+$color-yellow-primary: #FFFF00;
+$color-yellow-secondary: #FFFF33;
+$color-yellow-tertiary: #FFFF33;
+$color-yellow-light: #FFFFCC;
+$color-yellow-hover: #FFFF00;
+$color-yellow-active: #FFFF00;
+
+// Accent Colours
+
+$color-orange-primary: #FF7F37;
+$color-orange-secondary: #FC9D68;
+$color-orange-tertiary: #FFD5BE;
+$color-orange-light: #FFECE1;
+
+// System Colours
+
+$color-green: #33BB59;
+$color-green-secondary: #B6EFC5;
+$color-green-tertiary: #DBF6E2;
+$color-green-hover: #35A956;
+
+$color-attention: #F6D523;
+$color-attention-secondary: #FFEF98;
+$color-attention-tertiary: #FFFAE1;
+$color-attention-hover: #F6D523;
+
+$color-error: #FF3030;
+$color-error-secondary: #FFC0C0;
+$color-error-tertiary: #FFF2F2;
+$color-error-hover: #ED2121;
+
+// Shades / greyscale
+
+$color-dark: #181818;
+$color-text-primary: #181818;
+$color-text-secondary: #5C5C5C;
+$color-text-tertiary: #747474;
+
+
+$color-brand-dark:  #181818;
+
+
+// Other Colours
+
+$color-light: #fff;
+
+$color-main: $color-dark;
+$color-valid: $color-green;
+$color-invalid: $color-error;
+$color-bg: #fff;
+$color-body: $color-dark;
+$color-hover: $color-yellow-hover;
+$color-white-hover: rgba(255, 255, 255, 0.5);
+$color-white-border: rgba(255, 255, 255, 0.8);
+$color-menu: #fff;
+$color-link: #000;
+$color-link-hover: $color-dark;
+$color-placeholder: $color-text-secondary;
+
+ // FONTS
+
+$font-base: 'new-frank','Open Sans','Helvetica','Arial',sans-serif;
+$font-main: 'new-frank','Open Sans','Helvetica','Arial',sans-serif;
+$font-light: 'new-frank','Open Sans','Helvetica','Arial',sans-serif;
+$font-thin: 'new-frank','Open Sans','Helvetica','Arial',sans-serif;
+$font-medium: 'new-frank','Open Sans','Helvetica','Arial',sans-serif;
+$font-bold: 'new-frank','Open Sans','Helvetica','Arial',sans-serif;
+$font-extra-bold: 'new-frank','Open Sans','Helvetica','Arial',sans-serif;
+$font-title:  'new-frank','Open Sans','Helvetica','Arial',sans-serif;
+$font-italic:  'new-frank','Open Sans','Helvetica','Arial',sans-serif;
+$font-icon: 'Bossman';
+
+
+$font-size: 18px;
+$font-weight: normal;
+$line-height: 1.55;
+$text-align: left;
+$input-transform: uppercase; // TRANSITIONS
+$transition: 500ms; // SELECTIONS
+$selection-bg: $color-yellow-primary;
+$selection-color: $color-body; // OVERLAY
+$overlay-bg: rgba(#1d1d1b, 0.55);
