@@ -46,8 +46,19 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	 *
 	 * @hooked woocommerce_template_loop_product_title - 10
 	 */
-	do_action( 'woocommerce_shop_loop_item_title' );
-
+	//do_action( 'woocommerce_shop_loop_item_title' );
+	//$arr = explode("&ndash;", get_the_title());
+	//print_r($arr);
+	?>
+	<?php
+		$artist = get_post_meta( get_the_ID(), 'artist_name', true );
+		$artistFinal = urlencode($artist);
+		$title = get_post_meta( get_the_ID(), 'web_title', true );
+		$titleFinal = urlencode($title);
+		?>
+		<h2 class="woocommerce-loop-product__title"><?php echo $artist; ?></h2>
+		<h3><?php echo $title; ?></h3>
+	<?php
 	/**
 	 * Hook: woocommerce_after_shop_loop_item_title.
 	 *

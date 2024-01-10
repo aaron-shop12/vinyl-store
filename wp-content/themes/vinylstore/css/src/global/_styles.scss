@@ -1,5 +1,5 @@
 $text-transform: none; // PARAGRAPH
-$p-font-size: 18px;
+$p-font-size: 15px;
 $p-margin: 20px;
 $p-font-weight: 400;
 $p-strong-font-weight: normal;
@@ -155,7 +155,7 @@ section {
                 width:12px;
                 height:9px;
                 background-size:12px 9px;
-                background-image:url('/img/tick-blue.svg');
+                /*background-image:url('/img/tick-blue.svg');*/
                 content:'';
             }
         }
@@ -169,7 +169,7 @@ section {
             li {
 
                 &:before {
-                    background-image:url('/img/tick-blue.svg');
+                    /*background-image:url('/img/tick-blue.svg');*/
                 }
             }
         }
@@ -297,7 +297,7 @@ body {
     background-color: #fff;
 
 	a {
-		color: $color-blue;
+		color: #00aeef;
         font-display: block;
 	}
 }
@@ -538,7 +538,7 @@ span.text {
 }
 
 a {
-	color: $color-body;
+	color: #00aeef;
 	text-decoration: none;
 	border: none;
 	cursor: pointer;

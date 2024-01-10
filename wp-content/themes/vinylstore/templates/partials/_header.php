@@ -1,3 +1,6 @@
+<div class="announcement">
+	<span><?php the_field('announcement_text', 'option'); ?></span>
+</div>
 <header class="header clear">
 	<div class="container">
 		<div class="header-top">
@@ -12,18 +15,22 @@
 				</a>
 			</span>
 			<span class="headerRight">
-					<div class="headerCart">
-						<a href="/cart" class="xoo-wsc-cart-trigger">
-							<span><?php echo WC()->cart->get_cart_contents_count() ?></span>
-						</a>
-					</div>
-				<div class="headerSearch">
-					<a href="#" id="headerSearch"></a>
+				<div class="headerCart">
+					<a href="/cart" class="xoo-wsc-cart-trigger">
+						<span><?php echo WC()->cart->get_cart_contents_count() ?></span>
+					</a>
 				</div>
-				<nav class="main-menu-container">
-					<?php theme_nav('main'); ?>
-				</nav>
+				<div class="headerSearch">
+					<!-- <a href="#" id="headerSearch"></a> -->
+					<form action="/" method="GET">
+						<input type="text" name="s" value="<?php if(!empty($_GET['s'])) { echo $_GET['s']; } ?>" placeholder="I'm searching for..." />
+						<input type="hidden" name="post_type" value="products" />
+					</form>
+				</div>
 			</span>
+			<nav class="main-menu-container">
+				<?php theme_nav('main'); ?>
+			</nav>
 		</div>
 	</div>
 	<div class="mobileMenu" id="mobileMenu">
@@ -62,11 +69,11 @@
 			</span>
 		</div>
 	</div>
-	<div id="searchForm" class="">
+	<!-- <div id="searchForm" class="">
 		<div class="container">
 			<form action="/" method="GET">
 				<input type="text" name="s" value="<?php if(!empty($_GET['s'])) { echo $_GET['s']; } ?>" placeholder="Enter search keyword" />
 			</form>
 		</div>	
-	</div>
+	</div> -->
 </header>

@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 get_header( 'shop' ); ?>
-<main class="shop product new<?php echo $new; ?>">
+<main class="shop product new">
 	
 	<section class="default woocommerce single">
 		<div class="container">

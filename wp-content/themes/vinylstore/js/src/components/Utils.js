@@ -41,7 +41,7 @@ export class UtilsInit {
         });
 
         // Search form
-        var headerSearch = document.getElementById("headerSearch");
+        /*var headerSearch = document.getElementById("headerSearch");
         var searchForm = document.getElementById("searchForm");
         headerSearch.addEventListener('click', function (event) {
             event.preventDefault();
@@ -52,7 +52,7 @@ export class UtilsInit {
                 searchForm.classList.add('active');
                 headerSearch.classList.add('active');
             }
-        });
+        });*/
 
         // Back to top 
         var backTop = document.getElementById("backTop");

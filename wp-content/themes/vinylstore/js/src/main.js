@@ -11,14 +11,14 @@ let Main = {
       //const darkModeInit = new DarkMode();
       //await darkModeInit.init();
 
-      const accordionInit = new Accordion();
-      await accordionInit.init();
+      //const accordionInit = new Accordion();
+      //await accordionInit.init();
 
-      const imageSliderInit = new ImageSlider();
-      await imageSliderInit.init();
+      //const imageSliderInit = new ImageSlider();
+      //await imageSliderInit.init();
 
-      const lightboxInit = new Lightbox();
-      await lightboxInit.init();
+      //const lightboxInit = new Lightbox();
+      //await lightboxInit.init();
 
       //const cookiesInit = new CookiesInit();
       //await cookiesInit.init();
