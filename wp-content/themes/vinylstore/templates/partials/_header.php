@@ -36,6 +36,7 @@
 	</div>
 	<div class="mobileMenu" id="mobileMenu">
 		<div class="container">
+			<span class="xoo-wsch-close xoo-wsc-icon-cross" id="mobileNavClose"></span>
 			<span class="menu-container">
 				<?php theme_nav('main'); ?>
 				<?php /*if ( have_rows( 'event_megamenu', 'options' ) ) : ?>

@@ -27,8 +27,8 @@ export class UtilsInit {
                 subBtn.classList.remove('active');
                 setTimeout(function() {
                     mobileMenu.classList.remove('active');
-                }, 300);    
-                //document.body.classList.remove('inactive');
+                }, 0);    
+                document.body.classList.remove('inactive');
             } else {
                 //header.classList.add('active');
                 mobileMenu.classList.add('active');
@@ -38,6 +38,17 @@ export class UtilsInit {
                     subContainer.classList.add('active');
                 }, 300);
             }
+        });
+
+        var mobileMenuClose = document.getElementById("mobileNavClose");
+        mobileMenuClose.addEventListener('click', function (event) {
+            event.preventDefault();
+            subContainer.classList.remove('active');
+            subBtn.classList.remove('active');
+            setTimeout(function() {
+                mobileMenu.classList.remove('active');
+            }, 0);    
+            document.body.classList.remove('inactive');
         });
 
         // Search form
