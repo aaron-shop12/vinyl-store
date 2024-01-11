@@ -7,6 +7,7 @@
 			<span class="logo desktop">
 				<a href="/" class="logoHeader">
 					<img src="<?php the_field('logo', 'option'); ?>" class="" alt="" width="800">
+					<img src="<?php the_field('logo_mobile', 'option'); ?>" class="mobile" alt="" width="300">
 				</a>
 			</span>
 			<span class="buttonWrapper" id="mobileNav">
@@ -38,7 +39,7 @@
 		<div class="container">
 			<span class="xoo-wsch-close xoo-wsc-icon-cross" id="mobileNavClose"></span>
 			<span class="menu-container">
-				<?php theme_nav('main'); ?>
+				<?php theme_nav('mobile'); ?>
 				<?php /*if ( have_rows( 'event_megamenu', 'options' ) ) : ?>
 					<?php while ( have_rows( 'event_megamenu', 'options'  ) ) : the_row(); ?>
 						<span class="events-mega-menu">

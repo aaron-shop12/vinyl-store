@@ -1195,3 +1195,11 @@ section.woocommerce.single div.product div.images img {
 .wc-block-components-order-summary .wc-block-components-panel__button {
     cursor: pointer;
 }
+
+@media only screen and (max-width: 440px) {
+    .wc-block-components-form .wc-block-components-text-input, .wc-block-components-text-input,
+    .wc-block-components-country-input,
+    .wc-block-components-state-input {
+        clear:both;
+    }
+}

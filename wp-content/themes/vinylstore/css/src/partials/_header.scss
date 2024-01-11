@@ -198,7 +198,7 @@ header.header {
             top: 0px;
             margin-top: 0px;
 
-            img.alt {
+            img.mobile {
                 display: none;
             }
 
@@ -228,6 +228,24 @@ header.header {
                     width: 300px;
                     position: relative;
                     top:8px;
+                }
+            }
+
+            @media only screen and (max-width: 479px) {
+                img {
+                    display:none;
+
+                    &.mobile {
+                        display: block;
+                        width:200px;
+                        top:0;
+                    }
+                }
+            }
+
+            @media only screen and (max-width: 374px) {
+                img {
+                    width:180px !important;
                 }
             }
         }
@@ -1024,6 +1042,10 @@ header.header {
                         color: #fff;
                         position: relative;
                         width: 100%;
+
+                        @media only screen and (max-width: 479px) {
+                            font-size: 14px;
+                        }   
                     }
 
                     &.menu-item-has-children {
