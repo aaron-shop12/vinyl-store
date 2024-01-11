@@ -1,3 +1,33 @@
+body.gift-card {
+    section.woocommerce.single div.type-product .entry-summary p.price {
+        display:none;
+    }
+}
+
+.pika-button:hover, .pika-row.pick-whole-week:hover .pika-button {
+    background:$color-blue !important;
+}
+
+.wc-block-components-product-details.wc-block-components-product-details li {
+    padding-left:0 !important;
+}
+
+.wc-block-components-product-details.wc-block-components-product-details:last-of-type {
+    margin-top:0 !important;
+}
+
+.wc-block-components-product-details.wc-block-components-product-details {
+    margin-bottom:0 !important;
+}
+
+.xoo-wsc-ft-buttons-cont a.xoo-wsc-ft-btn, .xoo-wsc-container .xoo-wsc-btn,
+a.xoo-wsc-ft-btn-checkout .amount {
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size:16px;
+    font-style: normal;
+}
+
 section.woocommerce {
     float: left;
     width: 100%;
@@ -7,19 +37,55 @@ section.woocommerce {
         background:#fff;
         padding-top:40px;
 
+        form.cart {
+            input {
+                border: 1px solid #50575e;
+                color: #2b2d2f;
+                width: 100%;
+                padding:10px;
+                margin-bottom:5px !important;
+                font-size:1em !important;
+            }
+            textarea {
+                border: 1px solid #50575e;
+                color: #2b2d2f;
+                width: 100% !important;
+                padding:10px !important;
+                height:120px !important;
+                margin-bottom:5px !important;
+                font-size:1em !important;
+            }
+            select {
+                height:50px !important;
+                padding:10px;
+                font-size:1em !important;
+            }
+            .pwgc-field-container {
+                float:left;
+                width:100%;
+                margin-bottom:10px !important;
+            }
+        }
+
         .slick-slider .slick-list {
             height:auto !important;
         }
 
         div.type-product .entry-summary {
             h1 {
-                font-size: 35px;
+                font-size: 24px;
                 margin-bottom: 10px;
+                font-weight:bold;
                 text-transform: uppercase;
+            }
+            h3 {
+                font-weight:bold;
+                font-size:20px;
+                margin-bottom: 10px;
             }
             p.price {
                 /*display: none;*/
-                font-size:18px;
+                font-size:20px;
                 font-weight:bold;
             }
         }
@@ -52,10 +118,10 @@ section.woocommerce {
                     min-width: 100%;
                     border:1px solid #000;
                     border-radius:0px;
-                    padding:6px;
+                    padding:10px;
                     background:none;
                     margin-right:0;
-                    height: 38px !important;
+                    height: 50px !important;
                 }
                 th {
                     display: none;
@@ -615,7 +681,6 @@ body.checkout {
     }
 
     .woocommerce {
-        margin-bottom: 70px;
         float:left;
         width: 100%;
 
@@ -738,6 +803,7 @@ body.checkout {
 p.wcsob_soldout_text {
     color:$color-blue !important;
     text-transform:uppercase;
+    font-weight:bold;
 }
 
 .woocommerce form.checkout_coupon {
@@ -837,7 +903,6 @@ p.wcsob_soldout_text {
     }
 }
 
-.woocommerce button,
 .woocommerce .wc-proceed-to-checkout a {
     background-color:$color-blue !important;
     text-transform: uppercase;

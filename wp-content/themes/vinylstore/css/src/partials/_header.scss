@@ -229,7 +229,7 @@ header.header {
                 float:right;
                 position: relative;
                 margin-left:15px;
-                margin-top:10px;
+                margin-top:19px;
 
                 @media only screen and (max-width: 1279px) {
                     margin-left:10px;
@@ -267,15 +267,38 @@ header.header {
                     input {
                         color:#000;
                         margin-bottom:0 !important;
-                        height:37px !important;
+                        height:50px !important;
+                        background:#fff !important;
+                        border:1px solid #565656 !important;
+                        border-radius:25px !important;
+                        padding:5px 60px 5px 20px !important;
+                        font-size:1em;
+                        width:100% !important;
+                        max-width:300px !important;
                     }
+                }
+
+                .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp button.dgwt-wcas-search-submit {
+                    top:9px;
+                    left:auto;
+                    right:9px;
+                }
+
+                .dgwt-wcas-search-wrapp {
+                    background:none;
+                    min-width: auto;
+                }
+
+                .dgwt-wcas-style-pirx .dgwt-wcas-sf-wrapp {
+                    background:none;
+                    padding:0;
                 }
             }
 
             .headerCart {
                 float: right;
                 margin-left: 15px;
-                margin-top: 10px;
+                margin-top: 25px;
 
                 @media only screen and (max-width: 1279px) {
                     margin-left:10px;
@@ -1070,4 +1093,12 @@ header.header {
             }
         }
     }
+}
+
+.dgwt-wcas-st {
+    font-size:14px !important;
+}
+
+.dgwt-wcas-style-pirx .dgwt-wcas-close:not(.dgwt-wcas-inner-preloader) {
+    right:2px !important;
 }

@@ -22,10 +22,11 @@
 				</div>
 				<div class="headerSearch">
 					<!-- <a href="#" id="headerSearch"></a> -->
-					<form action="/" method="GET">
+					<?php echo do_shortcode('[fibosearch]'); ?>
+					<!-- <form action="/" method="GET">
 						<input type="text" name="s" value="<?php if(!empty($_GET['s'])) { echo $_GET['s']; } ?>" placeholder="I'm searching for..." />
 						<input type="hidden" name="post_type" value="products" />
-					</form>
+					</form> -->
 				</div>
 			</span>
 			<nav class="main-menu-container">

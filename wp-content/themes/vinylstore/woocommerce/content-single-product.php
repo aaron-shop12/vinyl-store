@@ -45,6 +45,7 @@ if ( post_password_required() ) {
 
 	<div class="summary entry-summary">
 		<?php
+		$productTitle = get_the_title();
 		$artist = get_post_meta( get_the_ID(), 'artist_name', true );
 		$artistFinal = urlencode($artist);
 		$title = get_post_meta( get_the_ID(), 'web_title', true );
@@ -53,9 +54,17 @@ if ( post_password_required() ) {
 		$barcode = get_post_meta( get_the_ID(), 'barcode', true );
 		$format = get_post_meta( get_the_ID(), 'Format', true );
 		$releaseDate = get_post_meta( get_the_ID(), 'release_date', true );
+		$short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
 		?>
-		<h1 class="product_title entry-title"><?php echo $artist; ?></h1>
-		<h3><?php echo $title; ?></h3>
+		<?php if($productTitle != 'Gift Card') { ?>
+			<h1 class="product_title entry-title"><?php echo $artist; ?></h1>
+			<h3><?php echo $title; ?></h3>
+		<?php } else { ?>
+			<h1 class="product_title entry-title"><?php echo $productTitle; ?></h1>
+			<div class="woocommerce-product-details__short-description">
+				<?php echo $short_description; // WPCS: XSS ok. ?>
+			</div>
+		<?php } ?>	
 		<?php
 		//do_action( 'woocommerce_template_single_add_to_cart' );
 		/**
@@ -71,17 +80,18 @@ if ( post_password_required() ) {
 		 * @hooked WC_Structured_Data::generate_product_data() - 60
 		 */
 		do_action( 'woocommerce_single_product_summary' );
-		$short_description = apply_filters( 'woocommerce_short_description', $post->post_excerpt );
 		?>
-		<p>Format: <?php echo $format; ?><br />Cat No: <?php echo $catNo; ?><br />Barcode: <?php echo $barcode; ?><br />Released: <?php echo $releaseDate; ?></p>
-		<?php
-		if ( ! $short_description ) {
-		return;
-		}
-		?>
-		<div class="woocommerce-product-details__short-description">
-			<?php echo $short_description; // WPCS: XSS ok. ?>
-		</div>
+		<?php if($productTitle != 'Gift Card') { ?>
+			<p>Format: <?php echo $format; ?><br />Cat No: <?php echo $catNo; ?><br />Barcode: <?php echo $barcode; ?><br />Released: <?php echo $releaseDate; ?></p>
+			<?php
+			if ( ! $short_description ) {
+			return;
+			}
+			?>
+			<div class="woocommerce-product-details__short-description">
+				<?php echo $short_description; // WPCS: XSS ok. ?>
+			</div>
+		<?php } ?>
 	</div>
 
 	<?php
