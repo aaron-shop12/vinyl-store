@@ -33,6 +33,10 @@ section.woocommerce {
     width: 100%;
     padding: 40px 0 40px;
 
+    @media only screen and (max-width: 639px) {
+        padding:20px 0 20px;
+    }
+
     &.single {
         background:#fff;
         padding-top:40px;
@@ -1186,4 +1190,8 @@ body:not(.woocommerce-block-theme-has-button-styles) .wc-block-components-button
 section.woocommerce.single div.product div.images img {
     width:100% !important;
     margin-left:0 !important;
+}
+
+.wc-block-components-order-summary .wc-block-components-panel__button {
+    cursor: pointer;
 }

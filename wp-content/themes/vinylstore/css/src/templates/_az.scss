@@ -10,6 +10,10 @@ section.azList {
             gap:30px;
             grid-template-columns: 1fr 1fr 1fr 1fr;
 
+            @media only screen and (max-width: 767px) {
+                grid-template-columns: 1fr 1fr;
+            }
+
             > div {
                 float:left;
                 width:100%;

@@ -18,6 +18,10 @@ section.baseBlocks {
             gap:20px;
             grid-template-columns: 1fr 1fr 1fr;
 
+            @media only screen and (max-width: 1023px) {
+                grid-template-columns: 1fr;
+            }
+
             > div {
                 background:#fff;
                 float:left;
@@ -48,6 +52,10 @@ section.categoryList {
     background:#000;
     margin-top:40px;
 
+    @media only screen and (max-width: 639px) {
+        margin-top:20px;
+    }
+
     .container {
 
         .grid {
@@ -55,6 +63,14 @@ section.categoryList {
             gap:20px;
             padding-top:20px;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+            @media only screen and (max-width: 1023px) {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
+
+            @media only screen and (max-width: 639px) {
+                grid-template-columns: 1fr 1fr;
+            }
 
             a {
                 position: relative;
@@ -121,6 +137,10 @@ section.pageTitle {
     width: 100%;
     padding-top:40px;
 
+    @media only screen and (max-width: 639px) {
+        padding-top:20px;
+    }
+
     h1 {
         text-align:center;
         font-weight: bold;
@@ -153,6 +173,10 @@ section.baseImage {
         padding-bottom: 10%;
         z-index: 1;
 
+        @media only screen and (max-width: 639px) {
+            padding-bottom: 15%;
+        }
+
         img {
             width:100%;
             height:100%;
@@ -166,7 +190,7 @@ section.baseImage {
     span.title {
         float:left;
         width: 100%;
-        padding:40px 20px;
+        padding:0px 20px;
         position: absolute;
         text-align: center;
         top:0;
@@ -182,6 +206,11 @@ section.baseImage {
             margin:0;
             font-weight: bold;
             font-size:32px;
+            line-height:1;
+
+            @media only screen and (max-width: 1023px) {
+                font-size:20px;
+            }
         }
     }
 }

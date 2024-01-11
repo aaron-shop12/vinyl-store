@@ -9,15 +9,15 @@
                     <img src="<?php the_field('footer_logo', 'option'); ?>" class="" alt="" width="<?php the_field('footer_logo_width', 'option'); ?>">
                 </a>
             </div>
-            <div class="column second">
+            <!-- <div class="column second">
                 <h6 class=""><?php the_field( 'footer_links_column_one_title', 'option' ); ?></h6>
                 <?php the_field('footer_links_column_one', 'option'); ?>
-            </div>
+            </div> -->
             <div class="column third">
-                <h6 class=""><?php the_field( 'footer_links_column_two_title', 'option' ); ?></h6>
+                <!-- <h6 class=""><?php the_field( 'footer_links_column_two_title', 'option' ); ?></h6> -->
                 <?php theme_nav('footer'); ?>
             </div>
-            <div class="column fourth">
+            <!-- <div class="column fourth">
                 <h6 class=""><?php the_field( 'footer_links_column_three_title', 'option' ); ?></h6>
                 <address class="">
                     <?php the_field( 'footer_links_column_three', 'option' ); ?>
@@ -54,7 +54,7 @@
                         </li>
                     <?php } ?>
                 </ul>
-            </div>
+            </div> -->
             <div class="copyright">
                 <?php the_field( 'copyright', 'option' ); ?>
             </div>

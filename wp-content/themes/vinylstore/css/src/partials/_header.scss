@@ -222,6 +222,14 @@ header.header {
                     width: 400px;
                 }
             }
+
+            @media only screen and (max-width: 639px) {
+                img {
+                    width: 300px;
+                    position: relative;
+                    top:8px;
+                }
+            }
         }
 
         .headerRight {
@@ -311,7 +319,6 @@ header.header {
 
                 @media only screen and (max-width: 1023px) {
                     margin-left:0;
-                    margin-right:20px;
                 }
 
                 a {
@@ -880,7 +887,7 @@ header.header {
             float:left;
             width:100%;
             display: block !important;
-            padding-top:20px !important;
+            padding-top:30px !important;
 
             li {
                 list-style: none;
