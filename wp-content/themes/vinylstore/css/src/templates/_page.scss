@@ -87,7 +87,7 @@ section.categoryList {
                     position: absolute;
                     left:0;
                     padding:0 20px;
-                    bottom:10px;
+                    bottom:0px;
                     color:#fff;
                     text-shadow: 2px 2px #000;
                     text-transform: uppercase;
@@ -95,6 +95,10 @@ section.categoryList {
                     z-index: 3;
                     text-align: center;
                     width:100%;
+                    height:100%;
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
                 }
 
                 span.image {
@@ -102,6 +106,7 @@ section.categoryList {
                     width:100%;
                     padding-bottom:100%;
                     position: relative;
+                    border:2px solid #fff;
 
                     &:after {
                         top:0;
@@ -124,6 +129,7 @@ section.categoryList {
                         height:100%;
                         object-fit: cover;
                         z-index: 1;
+                        opacity: 0;
                     }
                 }
             }

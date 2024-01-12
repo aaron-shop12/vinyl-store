@@ -37,14 +37,20 @@
                     $imageID = get_term_meta( $term->term_id, 'thumbnail_id', true );
                     $image = wp_get_attachment_url( $imageID );
                 ?>
-                    <?php if($imageID) { ?>
+                    <?php /*if($imageID) { ?>
                         <a href="/product-category/<?php echo $term -> slug; ?>">
                             <span class="image">
                                 <img src="<?php echo $image; ?>" alt="<?php echo $term -> name; ?>" />
                             </span>
                             <span class="title"><?php echo $term -> name; ?></span>
                         </a>
-                    <?php } ?>
+                    <?php }*/ ?>
+                    <a href="/product-category/<?php echo $term -> slug; ?>">
+                        <span class="image">
+                            <img src="<?php echo $image; ?>" alt="<?php echo $term -> name; ?>" />
+                        </span>
+                        <span class="title"><?php echo $term -> name; ?></span>
+                    </a>
                 <?php } ?>
             </div>    
         </div>
@@ -66,9 +72,9 @@
     </div>
 </section>
 <?php } ?>
-<section class="baseImage">
+<!-- <section class="baseImage">
     <span class="image">
         <img src="<?php the_field('base_image','options'); ?>" alt="Metropolis Touring Company" />
     </span>
     <span class="title"><h4>Metropolis Touring Company</h4></span>
-</section>
+</section> -->
