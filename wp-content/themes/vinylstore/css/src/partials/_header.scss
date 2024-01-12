@@ -271,30 +271,43 @@ header.header {
                 }
 
                 @media only screen and (max-width: 1023px) {
-                    display: none;
+                    /*display: none;*/
                 }
 
                 a {
-                    width: 38px;
-                    height:38px;
-                    border:1px solid #000;
+                    width: 30px;
+                    height:30px;
+                    border:0px solid #000;
                     border-radius:50%;
                     float:left;
                     position:relative;
+                    display: none;
+                    margin-top:10px;
+                    margin-right:10px;
+
+                    @media only screen and (max-width: 1023px) {
+                        display:block;
+                    }
 
                     &:before {
-                        width: 20px;
-                        height:20px;
+                        width: 30px;
+                        height:30px;
                         content:'';
                         background-image:url('/img/search-black.svg');
-                        background-size:20px 20px;
+                        background-size:30px 30px;
                         position: absolute;
-                        left:8px;
-                        top:8px;
+                        left:0px;
+                        top:0px;
                     }
                 }
 
                 form {
+                    width:400px;
+
+                    @media only screen and (max-width: 1023px) {
+                        display:none;
+                    }
+
                     input {
                         color:#000;
                         margin-bottom:0 !important;
@@ -305,7 +318,7 @@ header.header {
                         padding:5px 60px 5px 20px !important;
                         font-size:1em;
                         width:100% !important;
-                        max-width:300px !important;
+                        max-width:400px !important;
                     }
                 }
 
@@ -1169,4 +1182,34 @@ header.header {
 
 .dgwt-wcas-style-pirx .dgwt-wcas-close:not(.dgwt-wcas-inner-preloader) {
     right:2px !important;
+}
+
+.searchwp-live-search-result a {
+    text-overflow: initial !important;
+    white-space: normal !important;
+    color:#000 !important;
+
+    span.image {
+        float:left;
+        width:40px;
+        height:40px;
+
+        img {
+            width:100%;
+            height:auto;
+        }
+    }
+
+    span.title {
+        float:left;
+        width:calc(100% - 90px);
+        margin-left:10px;
+    }
+
+    span.price {
+        float:right;
+        width:40px;
+        text-align: right;
+        font-weight:bold;
+    }
 }

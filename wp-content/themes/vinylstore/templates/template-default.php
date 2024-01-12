@@ -37,19 +37,13 @@
                     $imageID = get_term_meta( $term->term_id, 'thumbnail_id', true );
                     $image = wp_get_attachment_url( $imageID );
                 ?>
-                    <?php /*if($imageID) { ?>
-                        <a href="/product-category/<?php echo $term -> slug; ?>">
-                            <span class="image">
-                                <img src="<?php echo $image; ?>" alt="<?php echo $term -> name; ?>" />
-                            </span>
-                            <span class="title"><?php echo $term -> name; ?></span>
-                        </a>
-                    <?php }*/ ?>
                     <a href="/product-category/<?php echo $term -> slug; ?>">
                         <span class="image">
-                            <img src="<?php echo $image; ?>" alt="<?php echo $term -> name; ?>" />
+                            <?php if($imageID) { ?>
+                                <img src="<?php echo $image; ?>" alt="<?php echo $term -> name; ?>" />
+                            <?php } ?>    
                         </span>
-                        <span class="title"><?php echo $term -> name; ?></span>
+                        <span class="title"><span><?php echo $term -> name; ?></span></span>
                     </a>
                 <?php } ?>
             </div>    
