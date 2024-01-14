@@ -52,8 +52,8 @@ export class UtilsInit {
         });
 
         // Search form
-        /*var headerSearch = document.getElementById("headerSearch");
-        var searchForm = document.getElementById("searchForm");
+        var headerSearch = document.getElementById("headerSearch");
+        var searchForm = document.getElementById("searchwp-form-1");
         headerSearch.addEventListener('click', function (event) {
             event.preventDefault();
             if(headerSearch.classList.contains('active')) {
@@ -63,7 +63,7 @@ export class UtilsInit {
                 searchForm.classList.add('active');
                 headerSearch.classList.add('active');
             }
-        });*/
+        });
 
         // Back to top 
         var backTop = document.getElementById("backTop");

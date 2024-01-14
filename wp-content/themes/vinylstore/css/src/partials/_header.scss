@@ -237,7 +237,7 @@ header.header {
 
                     &.mobile {
                         display: block;
-                        width:200px;
+                        width:180px;
                         top:0;
                     }
                 }
@@ -245,7 +245,7 @@ header.header {
 
             @media only screen and (max-width: 374px) {
                 img {
-                    width:180px !important;
+                    width:140px !important;
                 }
             }
         }
@@ -256,11 +256,19 @@ header.header {
             text-align: right;
             width: auto;
 
+            @media only screen and (max-width: 1023px) {
+                position: static;
+            }
+
             .headerSearch {
                 float:right;
                 position: relative;
                 margin-left:15px;
                 margin-top:19px;
+
+                @media only screen and (max-width: 1023px) {
+                    position: static;
+                }
 
                 /*@media only screen and (max-width: 1359px) {
                     display: none;
@@ -308,6 +316,28 @@ header.header {
                         display:none;
                     }
 
+                    @media only screen and (max-width: 1023px) {
+                        position: absolute;
+                        left:0px;
+                        width:calc(100% - 0px) !important;
+                        max-width:100% !important;
+                        top:52px;
+                    }
+
+                    @media only screen and (max-width: 479px) {
+                        top:75px;
+                    }
+
+                    @media only screen and (max-width: 374px) {
+                        top:62px;
+                    }
+
+                    &.active {
+                        @media only screen and (max-width: 1023px) {
+                                display:block !important;
+                        }
+                    }
+
                     input {
                         color:#000;
                         margin-bottom:0 !important;
@@ -319,6 +349,11 @@ header.header {
                         font-size:1em;
                         width:100% !important;
                         max-width:400px !important;
+
+                        @media only screen and (max-width: 1023px) {
+                            width:calc(100% - 00px) !important;
+                            max-width:100% !important;
+                        }
                     }
                 }
 
