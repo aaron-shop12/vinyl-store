@@ -32,6 +32,9 @@
                 $terms = get_terms( array(
                     'taxonomy'   => 'product_cat',
                     'hide_empty' => true,
+                    'orderby' => 'name',
+                    'order'   => 'ASC',
+                    'exclude' => array( 188, 189, 175, 185 )
                 ));
                 foreach( $terms as $term ) {
                     $imageID = get_term_meta( $term->term_id, 'thumbnail_id', true );

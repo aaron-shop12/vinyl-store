@@ -53,11 +53,11 @@ get_header();
             </div>    
         </div>
     </section>
-    <section class="baseImage">
+    <!-- <section class="baseImage">
         <span class="image">
             <img src="<?php the_field('base_image','options'); ?>" alt="Metropolis Touring Company" />
         </span>
         <span class="title"><h4>Metropolis Touring Company</h4></span>
-    </section>
+    </section> -->
 </main>
 <?php get_footer(); ?>

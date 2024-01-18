@@ -155,7 +155,7 @@ section.woocommerce {
             }
 
             form.cart .button {
-                background-color:$color-blue;
+                background-color:green;
                 text-transform: uppercase;
                 font-size: 16px;
                 letter-spacing: 0;
@@ -604,7 +604,7 @@ section.woocommerce {
             a.button {
                 margin:10px 0px 10px !important;
                 line-height: 38px;
-                background:$color-blue;
+                background:green;
                 color:#fff;
                 text-transform: uppercase;
                 padding:0px 15px 0px !important;
@@ -620,9 +620,19 @@ section.woocommerce {
         }
     }
 
-    section.related,
     section.upsells {
         display: none;
+    }
+
+    section.related {
+        display:block;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 24px;
+            font-weight:bold;
+            color:#000;
+        }
     }
 }
 
@@ -931,11 +941,114 @@ p.wcsob_soldout_text {
 
 form.checkout {
     background:#fff;
-    padding:20px 20px;
+    padding:0px 0px;
+}
+
+input#ship-to-different-address-checkbox {
+    width: 20px;
+    height: 20px !important;
+    border: 0;
+    appearance: checkbox;
+    position: relative;
+    top: 0;
+    margin: 3px 3px 0px 0px !important;
+    padding: 0 !important;
+}
+
+.p-CardIcons {
+    display:none;
+}
+
+#add_payment_method #payment div.form-row, .woocommerce-cart #payment div.form-row, .woocommerce-checkout #payment div.form-row {
+    padding:0px !important;
+}
+
+input#pwgc-redeem-button {
+    color:#000;
+    margin:0 !important;
+    font-size:15px;
+    text-transform: uppercase;
+}
+
+.woocommerce .col2-set .col-1 {
+    margin-bottom:20px !important;
+}
+
+input#terms {
+    height:20px !important;
+    width:20px;
+    border:0;
+    appearance: checkbox;
+    margin-top:5px;
+}
+
+.yith-wcbm-badge.yith-wcbm-badge-text.yith-wcbm-badge-22058 {
+    text-transform:uppercase;
+    width:auto;
+    padding-left:5px;
+    padding-right:5px;
+}
+
+button#place_order {
+    font-weight: 700;
+    text-transform: uppercase;
+    background: green;
+    border: 0;
+    color: #fff;
+    border-radius: 0 !important;
+}
+
+.is-large.wc-block-cart .wc-block-components-radio-control__input {
+    height:27px !important;
+}
+
+.Input {
+    padding-top:5px !important;
+    padding-bottom:5px !important;
+}
+
+.woocommerce table.shop_table th.product-total,
+.woocommerce table.shop_table tr.cart-subtotal td,
+.woocommerce table.shop_table tr.order-total td {
+    text-align: right;
+}
+
+.odr-order-bump-template-seventeen .odr-order-bump-banner-product-details {
+    width:calc(85% - 87px);
+}
+
+#add_payment_method #payment, .woocommerce-cart #payment, .woocommerce-checkout #payment {
+    background:none !important;
+}
+
+h5.odr-order-bump-lead-title {
+    text-transform: uppercase;
+}
+
+.odr-order-bump-template-seventeen .odr-order-bump-banner-content-wrapper h4 {
+    font-size:16px;
+}
+
+.odr-order-bump-banner-checkbox {
+    margin:0 !important;
+    padding:20px;
+}
+
+input.odr-offer-selection-field {
+    width:20px;
+    height:20px !important;
+    margin:0 !important;
+    appearance:checkbox;
+}
+
+ul#shipping_method {
+    float:right;
+    width:140px;
+    text-align: left;
 }
 
 .woocommerce .woocommerce-checkout-review-order {
-    width: 48%;
+    width: 100%;
 
     td {
         text-align: left;
@@ -980,8 +1093,13 @@ form.checkout {
     display:none;
 }
 
+.woocommerce form .form-row {
+    padding:0;
+}
+
 .woocommerce-checkout #payment ul.payment_methods {
     border:0 !important;
+    padding-bottom:40px !important;
 
     li {
         line-height: 1.4;
@@ -998,7 +1116,7 @@ form.checkout {
             appearance:radio;
             -webkit-appearance: radio;
             margin-right:5px;
-            margin-left:10px;
+            margin-left:0px;
         }
 
         img {
@@ -1150,7 +1268,7 @@ body .lmp_load_more_button.br_lmp_prev_settings .lmp_button:hover {
 button.wc-block-components-button,
 body:not(.woocommerce-block-theme-has-button-styles) .wc-block-components-button:not(.is-link) {
     color:#fff;
-    background:$color-blue;
+    background:green;
     border:0;
 }
 
