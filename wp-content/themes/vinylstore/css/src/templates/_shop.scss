@@ -1290,7 +1290,9 @@ form.wc-block-components-totals-coupon__form button.wc-block-components-button {
 }
 
 .woocommerce div.product div.images .woocommerce-product-gallery__image:nth-child(n+2) {
-    display: none !important;
+    /*display: none !important;*/
+    margin-right:5px;
+    margin-bottom:5px;
 }
 
 .woocommerce div.product p.stock {
