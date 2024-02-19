@@ -16,11 +16,20 @@ get_header();
             <?php } ?>
         </div>
     </section>
+    <section class="azFilter">
+        <div class="container">
+            <div class="inner">
+            <?php foreach (range('A', 'Z') as $char) { ?>
+                <a href="#list<?php echo $char; ?>"><?php echo $char;?></a>
+            <?php } ?>
+            </div>
+        </div>
+    </section>
     <section class="azList">
         <div class="container">
             <div class="listing">
                 <?php foreach (range('A', 'Z') as $char) { ?>
-                    <div>
+                    <div id="list<?php echo $char; ?>">
                         <h3><?php echo $char;?></h3>
                         <ul>
                             <?php

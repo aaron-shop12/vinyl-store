@@ -42,3 +42,52 @@ section.azList {
         }
     }
 }
+
+section.azFilter {
+    float:left;
+    width: 100%;
+    margin:5px 0;
+
+    .container {
+
+        .inner {
+            float:left;
+            width:100%;
+            max-width: 100%;
+            display: flex;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            flex-grow: 1;
+
+            @media only screen and (max-width: 639px) {
+                display:grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap:2px;
+            }
+
+            a {
+                color:#fff;
+                background:$color-blue;
+                line-height:1.4;
+                padding:0 15px;
+                @include transition(all, 200ms, ease);
+                text-align: center;
+
+                @media only screen and (max-width: 1279px) {
+                    width:7.4%;
+                    margin-bottom:0.3%;
+                }
+
+                @media only screen and (max-width: 639px) {
+                    margin:0;
+                    width:100%;
+                }
+
+                &:hover {
+                    background:#000;
+                }
+            }
+        }
+
+    }
+}
